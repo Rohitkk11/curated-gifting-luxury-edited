@@ -1,5 +1,6 @@
 const WHATSAPP_NUMBER = "919999999999"; // REPLACE WITH YOUR WHATSAPP NUMBER
 const products = [
+  { name: "ProductP1Box1V1", price: 1599, cat: ["luxury"], tag: "NEW", desc: "Premium edition gift box with curated luxury items." },
   { name: "Champagne Glow", price: 1499, cat: ["her", "birthday"], tag: "BESTSELLER", desc: "Scented candle, bracelet, chocolate & a personalized note." },
   { name: "The Gentleman Edit", price: 1799, cat: ["him", "birthday"], tag: "POPULAR", desc: "Refined accessories, grooming essentials & premium treats." },
   { name: "Just Us Luxury", price: 2499, cat: ["couple", "anniversary"], tag: "COUPLES", desc: "A sophisticated celebration box with keepsakes for two." },
