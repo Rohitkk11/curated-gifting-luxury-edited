@@ -1,0 +1,32 @@
+{
+  "name": "curated-gifting-luxury",
+  "version": "1.0.0",
+  "description": "A modern e-commerce website for curated luxury gift boxes. Order directly on WhatsApp.",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server",
+    "serve": "python -m http.server 8000",
+    "build": "echo 'No build step needed - static site'"
+  },
+  "keywords": [
+    "gifting",
+    "luxury",
+    "gifts",
+    "ecommerce",
+    "whatsapp",
+    "hampers"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/curated-gifting-luxury.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/curated-gifting-luxury/issues"
+  },
+  "homepage": "https://github.com/your-username/curated-gifting-luxury#readme"
+}
