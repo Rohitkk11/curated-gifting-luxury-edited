@@ -21,7 +21,7 @@ function render(filter = "all") {
         <article class="card">
           <div class="product-img">
             <span class="tag">${p.tag}</span>
-            <div class="mini-box"></div>
+            <img src="assets/images/allLatestGiftImages/${p.name}.jpeg" alt="${p.name}" style="max-width: 145px; max-height: 100px; object-fit: contain;">
           </div>
           <div class="card-body">
             <h3>${p.name}</h3>
