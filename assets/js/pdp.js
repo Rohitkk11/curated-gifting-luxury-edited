@@ -95,7 +95,7 @@ function renderPDP() {
     updateSlider();
   }
   
-  document.title = product.name + " | Sajja";
+  document.title = product.name + " | The Gifting Edit";
 }
 
 renderPDP();
