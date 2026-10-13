@@ -3,14 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Curated Gifting | Thoughtful Gifts, Beautifully Boxed</title>
+<title>Sajja | Thoughtful Gifts, Beautifully Boxed</title>
 <meta name="description" content="Curated and customized gift boxes for every occasion. Order directly on WhatsApp.">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="home-page">
 <header><div class="container nav">
-  <a class="logo" href="#">Curated<span>Gifting</span></a>
-  <nav><a href="#shop">Gift Boxes</a><a href="#collections">Collections</a><a href="#festive">Festive</a><a href="#custom">Custom Box</a><a href="#faq">FAQ</a></nav>
+  <a class="logo" href="#">Sajja</a>
+  <div class="pills" id="filters">
+    <div class="pill-group">
+      <button class="pill active" data-filter="festive" data-href="pages/festive.html">Festive</button>
+      <div class="dropdown">
+        <button class="dropdown-item" data-filter="diwali" data-href="pages/festive.html?category=diwali">🪔 Diwali</button>
+        <button class="dropdown-item" data-filter="christmas" data-coming-soon="Christmas" data-href="pages/festive.html?category=christmas">🎄 Christmas <span class="dropdown-status">Coming Soon</span></button>
+        <button class="dropdown-item" data-filter="valentine" data-coming-soon="Valentine" data-href="pages/festive.html?category=valentine">💗 Valentine <span class="dropdown-status">Coming Soon</span></button>
+        <button class="dropdown-item" data-filter="newyear" data-coming-soon="New Year" data-href="pages/festive.html?category=newyear">🥂 New Year <span class="dropdown-status">Coming Soon</span></button>
+      </div>
+    </div>
+    <div class="pill-group">
+      <button class="pill" data-filter="corporate" data-href="pages/corporate.html">Corporate</button>
+      <div class="dropdown">
+        <button class="dropdown-item" data-filter="corporate-single" data-href="pages/corporate.html?category=corporate-single">Single Order</button>
+        <button class="dropdown-item" data-filter="corporate-bulk" data-href="pages/corporate.html?category=corporate-bulk">Bulk Order</button>
+      </div>
+    </div>
+    <div class="pill-group">
+      <button class="pill" data-filter="birthdayanniversary" data-href="pages/birthdays-anniversary.html">Birthdays/Anniversary</button>
+      <div class="dropdown">
+        <button class="dropdown-item" data-filter="birthday-her" data-href="pages/birthdays-anniversary.html?category=birthday-her">Her Birthday</button>
+        <button class="dropdown-item" data-filter="birthday-him" data-href="pages/birthdays-anniversary.html?category=birthday-him">Him Birthday</button>
+        <button class="dropdown-item" data-filter="anniversary" data-href="pages/birthdays-anniversary.html?category=anniversary">Anniversary</button>
+      </div>
+    </div>
+    <div class="pill-group">
+      <button class="pill" data-filter="custom">Custom</button>
+      <div class="dropdown">
+        <button class="dropdown-item" data-filter="customize">✨ Customize</button>
+        <button class="dropdown-item" data-filter="custom-999">Under ₹999</button>
+        <button class="dropdown-item" data-filter="custom-1499">₹999–₹1,499</button>
+        <button class="dropdown-item" data-filter="custom-2499">₹1,500–₹2,499</button>
+        <button class="dropdown-item" data-filter="custom-2500">₹2,500+</button>
+      </div>
+    </div>
+  </div>
   <a class="navbtn" href="javascript:wa('Hi! I would like to explore your luxury gift boxes.')">WhatsApp Order</a>
 </div></header>
 
@@ -20,18 +55,17 @@
   <h1>Luxury gifting, beautifully boxed.</h1>
   <p>Elegant gift boxes, refined keepsakes and personalized hampers designed to make every celebration feel unforgettable.</p>
   <div class="actions"><a class="btn primary" href="#shop">Shop Gift Boxes</a><a class="btn soft" href="#custom">Build a Custom Box</a></div></div>
-  <div class="hero-card"><div class="floating f1">✦ Curated luxury</div><div class="box-art"></div><div class="floating f2">From ₹999 • WhatsApp</div></div>
+  <div class="hero-card"><div class="floating f1">✦ Curated luxury</div><img class="hero-product-image" src="assets/images/allLatestGiftImages/Diwali/box2%20v1.jpeg" alt="Open decorated Diwali gift box filled with festive treats" /><div class="floating f2">From ₹999 • WhatsApp</div></div>
+  <span class="hero-diya hero-diya-bottom-left" aria-hidden="true">🪔</span>
+  <span class="hero-diya hero-diya-bottom-right" aria-hidden="true">🪔</span>
 </div></section>
 
-<section id="shop"><div class="container">
+<section id="shop" class="home-shop"><div class="container">
   <div class="section-head"><div class="eyebrow">Our collection</div><h2>Gift boxes they'll actually love</h2><p>Pick a ready-to-order box or make it your own.</p></div>
-  <div class="pills" id="filters">
-    <button class="pill active" data-filter="all">All</button><button class="pill" data-filter="her">For Her</button><button class="pill" data-filter="him">For Him</button><button class="pill" data-filter="couple">Couples</button><button class="pill" data-filter="corporate">Corporate</button><button class="pill" data-filter="festive">Festive</button><button class="pill" data-filter="luxury">Luxury</button>
-  </div>
   <div class="grid" id="products"></div>
 </div></section>
 
-<section id="collections" class="occasion"><div class="container"><div class="section-head"><div class="eyebrow">Shop by occasion</div><h2>There is always a reason to gift.</h2></div>
+<section id="collections" class="occasion home-occasions"><div class="container"><div class="section-head"><div class="eyebrow">Shop by occasion</div><h2>There is always a reason to gift.</h2></div>
 <div class="grid">
 <a class="occasion-card" href="#shop"><div class="icon">💗</div><h3>For Her</h3><p class="desc">Graceful, elegant gifts with a feminine touch.</p></a>
 <a class="occasion-card" href="#shop"><div class="icon">🖤</div><h3>For Him</h3><p class="desc">Refined gifting for the modern gentleman.</p></a>
@@ -41,7 +75,7 @@
 <a class="occasion-card" href="#custom"><div class="icon">✨</div><h3>Custom Box</h3><p class="desc">Build a luxury gift around your budget and style.</p></a>
 </div></div></section>
 
-<section id="festive" class="festive-wrap"><div class="container"><div class="section-head"><div class="eyebrow">Seasonal edit</div><h2>Celebrate in their colors.</h2><p>Distinct palettes for every celebration — never one-color-fits-all.</p></div><div class="festive-grid">
+<section id="festive" class="festive-wrap home-festive"><div class="container"><div class="section-head"><div class="eyebrow">Seasonal edit</div><h2>Celebrate in their colors.</h2><p>Distinct palettes for every celebration — never one-color-fits-all.</p></div><div class="festive-grid">
 <div class="festive-card diwali"><span>🪔</span><h3>Diwali</h3><p>Maroon • Antique Gold</p><a href="#shop">Explore →</a></div>
 <div class="festive-card jewellery"><span>💎</span><h3>Luxury Jewellery</h3><p>Black • Gold</p><a href="#shop">Explore →</a></div>
 <div class="festive-card christmas"><span>🎄</span><h3>Christmas</h3><p>Deep Green • Burgundy</p><a href="#shop">Explore →</a></div>
@@ -71,7 +105,7 @@
 <section class="cta"><div class="container"><div class="eyebrow">Let's make gifting personal</div><h2>Have something specific in mind?</h2><p>Tell us what you're looking for and we'll help you create it.</p><a class="btn primary" href="javascript:openCustom()">Talk to us on WhatsApp</a></div></section>
 </main>
 
-<footer><div class="container"><div class="footer-grid"><div><div class="logo">Curated<span>Gifting</span></div><p style="color:var(--muted);max-width:340px">Beautifully curated and customized gifts for every kind of celebration.</p></div><div class="footer-links"><strong>Explore</strong><a href="#shop">Gift Boxes</a><a href="#collections">Occasions</a><a href="#custom">Custom Box</a></div><div class="footer-links"><strong>Contact</strong><a href="javascript:openCustom()">WhatsApp</a><a href="#faq">FAQs</a></div></div><div class="copyright">© 2026 Curated Gifting. Demo MVP — replace brand details before launch.</div></div></footer>
+<footer><div class="container"><div class="footer-grid"><div><div class="logo">Sajja</div><p style="color:var(--muted);max-width:340px">Beautifully curated and customized gifts for every kind of celebration.</p></div><div class="footer-links"><strong>Explore</strong><a href="#shop">Gift Boxes</a><a href="#collections">Occasions</a><a href="#custom">Custom Box</a></div><div class="footer-links"><strong>Contact</strong><a href="javascript:openCustom()">WhatsApp</a><a href="#faq">FAQs</a></div></div><div class="copyright">© 2026 Sajja. Demo MVP — replace brand details before launch.</div></div></footer>
 <a class="whatsapp" href="javascript:wa('Hi! I would like to explore your gift boxes.')">💬 WhatsApp</a>
 
 <div class="modal" id="customModal"><div class="modal-box"><button class="close" onclick="closeCustom()">×</button><div class="eyebrow">Custom gifting</div><h2 style="margin-top:8px">Tell us what you're imagining.</h2><p style="color:var(--muted)">We'll turn these details into a curated box and discuss it with you on WhatsApp.</p>
@@ -82,5 +116,7 @@
 <button class="btn primary" style="width:100%;margin-top:18px">Continue on WhatsApp</button></form></div></div>
 
 <script src="assets/js/script.js"></script>
+<script src="assets/js/coming-soon.js"></script>
+<script src="assets/js/background.js"></script>
 </body>
 </html>

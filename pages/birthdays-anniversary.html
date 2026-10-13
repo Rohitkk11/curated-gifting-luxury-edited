@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday & Anniversary Gifts | Sajja</title>
+<meta name="description" content="Beautiful birthday and anniversary gift boxes for every celebration.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header><div class="container nav">
+  <a class="logo" href="../index.html">Sajja</a>
+  <div class="pills" id="filters">
+    <div class="pill-group">
+      <button class="pill" data-filter="festive">Festive</button>
+      <div class="dropdown">
+        <button class="dropdown-item" data-filter="festive-link" data-href="festive.html">🪔 Diwali</button>
+        <button class="dropdown-item" data-filter="festive-link" data-coming-soon="Christmas" data-href="festive.html">🎄 Christmas <span class="dropdown-status">Coming Soon</span></button>
+        <button class="dropdown-item" data-filter="festive-link" data-coming-soon="Valentine" data-href="festive.html">💗 Valentine <span class="dropdown-status">Coming Soon</span></button>
+        <button class="dropdown-item" data-filter="festive-link" data-coming-soon="New Year" data-href="festive.html">🥂 New Year <span class="dropdown-status">Coming Soon</span></button>
+      </div>
+    </div>
+    <div class="pill-group">
+      <button class="pill" data-filter="corporate">Corporate</button>
+      <div class="dropdown">
+        <button class="dropdown-item" data-filter="corporate-link" data-href="corporate.html">Single Order</button>
+        <button class="dropdown-item" data-filter="corporate-link" data-href="corporate.html">Bulk Order</button>
+      </div>
+    </div>
+    <div class="pill-group">
+      <button class="pill active" data-filter="birthdayanniversary">Birthdays/Anniversary</button>
+      <div class="dropdown">
+        <button class="dropdown-item" data-filter="birthday-her">Her Birthday</button>
+        <button class="dropdown-item" data-filter="birthday-him">Him Birthday</button>
+        <button class="dropdown-item" data-filter="anniversary">Anniversary</button>
+      </div>
+    </div>
+    <div class="pill-group">
+      <button class="pill" data-filter="custom">Custom</button>
+      <div class="dropdown">
+        <button class="dropdown-item" data-filter="customize">✨ Customize</button>
+        <button class="dropdown-item" data-filter="custom-999">Under ₹999</button>
+        <button class="dropdown-item" data-filter="custom-1499">₹999–₹1,499</button>
+        <button class="dropdown-item" data-filter="custom-2499">₹1,500–₹2,499</button>
+        <button class="dropdown-item" data-filter="custom-2500">₹2,500+</button>
+      </div>
+    </div>
+  </div>
+  <a class="navbtn" href="javascript:wa('Hi! I would like to explore your luxury gift boxes.')">WhatsApp Order</a>
+</div></header>
+
+<main>
+<section id="shop"><div class="container">
+  <div class="section-head"><div class="eyebrow">Birthday & Anniversary</div><h2>Celebrate special moments.</h2><p>Thoughtfully curated gifts for birthdays, anniversaries and milestones.</p></div>
+  <div class="grid" id="products"></div>
+</div></section>
+</main>
+
+<footer><div class="container"><div class="footer-grid"><div><div class="logo">Sajja</div><p style="color:var(--muted);max-width:340px">Beautifully curated and customized gifts for every kind of celebration.</p></div><div class="footer-links"><strong>Explore</strong><a href="../index.html">Home</a><a href="festive.html">Festive</a><a href="corporate.html">Corporate</a></div><div class="footer-links"><strong>Contact</strong><a href="javascript:openCustom()">WhatsApp</a></div></div><div class="copyright">© 2026 Sajja. Demo MVP — replace brand details before launch.</div></div></footer>
+
+<div class="modal" id="customModal"><div class="modal-box"><button class="close" onclick="closeCustom()">×</button><div class="eyebrow">Custom gifting</div><h2 style="margin-top:8px">Tell us what you're imagining.</h2><p style="color:var(--muted)">We'll turn these details into a curated box and discuss it with you on WhatsApp.</p>
+<form onsubmit="submitCustom(event)"><div class="form-grid"><div><label>For</label><select id="for"><option>Her</option><option>Him</option><option>Couple</option><option>Friend</option><option>Family</option><option>Corporate</option></select></div><div><label>Occasion</label><select id="occasion"><option>Birthday</option><option>Anniversary</option><option>Valentine's</option><option>Wedding</option><option>Christmas</option><option>Diwali</option><option>Just Because</option><option>Other</option></select></div></div>
+<label>Budget</label><select id="budget"><option>Under ₹999</option><option>₹999–₹1,499</option><option>₹1,500–₹2,499</option><option>₹2,500+</option><option>Custom budget</option></select>
+<label>What would you like inside?</label><input id="prefs" placeholder="e.g. chocolates, candle, jewellery, skincare">
+<label>Personalized message</label><textarea id="msg" placeholder="Write the message you'd like included..."></textarea>
+<button class="btn primary" style="width:100%;margin-top:18px">Continue on WhatsApp</button></form></div></div>
+
+<script src="../assets/js/products-data.js"></script>
+<script src="../assets/js/plp.js"></script>
+<script src="../assets/js/coming-soon.js"></script>
+<script src="../assets/js/background.js"></script>
+</body>
+</html>
