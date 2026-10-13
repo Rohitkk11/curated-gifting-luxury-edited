@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "919999999999"; // REPLACE WITH YOUR WHATSAPP NUMBER
+const WHATSAPP_NUMBER = "916386797822";
 const diwaliSubCategories = [
   { name: "Peacock Glow Box", images: ["box1 v3.jpeg", "box1 v1.png", "box1 v2.png"] },
   { name: "Sunehri Keepsake", images: ["box2 v1.jpeg"] },
