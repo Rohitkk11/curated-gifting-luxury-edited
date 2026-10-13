@@ -277,3 +277,155 @@ header .pill-group:first-child .dropdown{min-width:220px}
 .coming-soon-content p{margin:0 0 18px;color:var(--muted)}
 .coming-soon-content .coming-soon-timer{margin-bottom:22px;font-size:12px;color:#88745c}
 .coming-soon-close{min-width:120px;background:#703023;color:#fff3df;border-color:#703023}
+
+@media (max-width: 900px) {
+  header .nav {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto auto;
+    height: auto;
+    min-height: 72px;
+    gap: 8px 12px;
+    padding: 12px 14px;
+  }
+
+  header .nav > .logo {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+    font-size: 21px;
+    white-space: nowrap;
+  }
+
+  header .navbtn {
+    grid-column: 2;
+    grid-row: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 8px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  header .pills#filters {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    min-width: 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 6px 8px;
+    padding: 0;
+  }
+
+  header .pill-group {
+    flex: 0 0 auto;
+  }
+
+  .pill-group:focus-within .dropdown {
+    display: block;
+  }
+}
+
+@media (max-width: 540px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  header .nav {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  header .nav > .logo {
+    font-size: 18px;
+  }
+
+  header .navbtn {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  header .pill {
+    min-height: 44px;
+    padding: 10px 11px;
+    white-space: nowrap;
+  }
+
+  header .pill-group:last-child .dropdown {
+    right: auto;
+    left: 0;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 1.02;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .hero {
+    padding: 48px 0;
+  }
+
+  .hero-grid {
+    gap: 28px;
+  }
+
+  .hero-card {
+    min-height: 280px;
+  }
+
+  .floating {
+    max-width: calc(100% - 24px);
+    padding: 9px 11px;
+    font-size: 11px;
+  }
+
+  .f1 {
+    top: 20px;
+    left: 12px;
+  }
+
+  .f2 {
+    right: 12px;
+    bottom: 20px;
+  }
+
+  .pdp-info h1 {
+    font-size: 28px;
+  }
+
+  .modal {
+    padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  }
+
+  .modal-box {
+    max-height: calc(100vh - 32px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    max-height: calc(100dvh - 32px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    width: 100%;
+    padding: 20px;
+  }
+
+  .coming-soon-dialog {
+    max-height: calc(100vh - 32px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    max-height: calc(100dvh - 32px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    overflow: auto;
+  }
+
+  .whatsapp {
+    right: calc(12px + env(safe-area-inset-right));
+    bottom: calc(12px + env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-width: 360px) {
+  header .pill-group:last-child .dropdown {
+    right: 0;
+    left: auto;
+  }
+}
